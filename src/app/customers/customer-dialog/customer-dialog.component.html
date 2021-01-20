@@ -1,0 +1,28 @@
+<form [formGroup]="form" (submit)="submitForm()">
+    <h1 mat-dialog-title>Wprowadź dane nowego użytkownika</h1>
+    <div mat-dialog-content>
+        <mat-form-field appearance="outline" class="example-full-width">
+            <input matInput placeholder="Imię" formControlName="name">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="example-full-width">
+            <input matInput placeholder="Nazwisko" formControlName="lastName">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="example-full-width">
+            <input matInput placeholder="Stanowisko" formControlName="jobTitle">
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="example-full-width">
+            <textarea matInput placeholder="Opis" formControlName="description"></textarea>
+        </mat-form-field>
+        <mat-form-field appearance="outline" class="example-full-width">
+            <input matInput placeholder="Źródło obrazka" formControlName="photoSource">
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <div mat-dialog-actions>
+            <button type="submit" class="btn btn-success btn-round">Dodaj</button>
+        </div>
+        <div mat-dialog-actions>
+            <button class="btn btn-danger btn-round" (click)="closeDialog()">Zamknij</button>
+        </div>
+    </div>
+</form>

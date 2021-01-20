@@ -1,0 +1,8 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <button class="btn btn-danger btn-round" (click)="addCustomer()">Dodaj </button>
+        <div class="row">
+            <app-customer-card class="col-md-4" *ngFor="let customer of customers" [customer]="customer"></app-customer-card>
+        </div>
+    </div>
+</div>

@@ -1,3 +1,11 @@
+## [2.6.0] - 2020-01-20
+### Feature
+- Dodanie do projektu dwóch zakładek: "Samochody" oraz "Użytkownicy"
+- Zakładki dodane w formie lazy loadowanych modułów
+- Przygotowanie generycznego serwisu do pobierania danych z backendu
+- Pobranie danych z backendu na widoku "Samochody"
+- Możliwość dodania nowego użytkownika poprzez MatDialog oraz formularz
+
 ## [2.5.0] - 2020-10-07
 ### Updates
 - update to Angular 10

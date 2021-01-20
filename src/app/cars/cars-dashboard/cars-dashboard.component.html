@@ -1,0 +1,9 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div *ngFor="let car of cars" class="col-md-4">
+                <app-car-card [car]="car"></app-car-card>
+            </div>
+        </div>
+    </div>
+</div>

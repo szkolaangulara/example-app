@@ -1,0 +1,15 @@
+<div class="card card-chart">
+    <div class="card-header card-header-image">
+        <img [src]="car.photoSource">
+    </div>
+    <div class="card-body">
+        <h4 class="card-title"> {{ car.brand }} {{ car.model }}</h4>
+        <p class="card-category">
+            <span class="text-success"><i class="material-icons">request_quote</i> {{ car.price }}</span> zł</p>
+    </div>
+    <div class="card-footer">
+        <div class="stats">
+            <i class="material-icons">access_time</i> updated 4 minutes ago
+        </div>
+    </div>
+</div>
